@@ -4,9 +4,10 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
-        Title="BingImage" Height="469.925" Width="795.358"  >
-    
-    
+        xmlns:properties="clr-namespace:Bing_Image.Properties"
+        Title="BingImage" Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
+
+
     <dx:DXWindow.Background>
         <ImageBrush/>
     </dx:DXWindow.Background>
@@ -14,13 +15,21 @@
 
         <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" />
         <dxb:MainMenuControl VerticalAlignment="Top"  FlowDirection="RightToLeft">
-            <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="_بروز رسانی"/>
-            <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="_انتخاب به عنوان تصویر زمینه " />
-            <dxb:BarSubItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="_انتخاب رزولوشن تصویر" />
-            <dxb:BarSubItem x:Name="locat" CategoryName="BuiltInMenus" Content="_مکان ذخیره سازی "/>
-            <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="اطلاعات تصویر" />
-            <dxb:BarSubItem x:Name="imagelocate" CategoryName="BuiltInMenus" Content=" تصویر دریافتی"/>
-            <dxb:BarSubItem x:Name="Aboutme" CategoryName="BuiltInMenus" Content="درباره ی ما" />
+            <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}"/>
+            <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" />
+            
+            <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" />
+            <dxb:BarSubItem x:Name="imagelocate" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubImages}"/>
+            <dxb:BarSubItem Name="bsSetting" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSetting}" >
+
+                <dxb:BarButtonItem x:Name="locat" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubStorage}" Glyph="pack://application:,,,/Bing Image;component/Resource/storage-16.png" />
+                <dxb:BarButtonItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRezolotion}" Glyph="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png"  />
+                <dxb:BarItemLinkSeparator/>
+                <dxb:BarButtonItem x:Name="SelectLanguage" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSelectLanguage}"  Glyph="pack://application:,,,/Bing Image;component/Resource/icon24pt_language_copy-16.png"/>
+                <dxb:BarItemLinkSeparator/>
+                <dxb:BarButtonItem Name="bAbout" CategoryName="Setting" Content="{x:Static properties:Resources.BarSubaboutus}" Description="Displays the description of this program." />
+            </dxb:BarSubItem>
+
 
         </dxb:MainMenuControl>
         <StatusBar x:Name="stbState" FlowDirection="RightToLeft" Height="26" VerticalAlignment="Bottom">
@@ -29,7 +38,7 @@
             </StatusBarItem>
         </StatusBar>
 
-        
+
 
     </Grid>
-    </dx:DXWindow>
+</dx:DXWindow>

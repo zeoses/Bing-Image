@@ -118,30 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BarSubaboutus" xml:space="preserve">
-    <value>about us</value>
+    <value>درباره ما</value>
   </data>
   <data name="BarSuBackGround" xml:space="preserve">
-    <value>Set as desktop Background</value>
+    <value>انتخاب به عنوان تصویر زمینه</value>
   </data>
   <data name="BarSubImages" xml:space="preserve">
-    <value>Images</value>
+    <value>تصاویر دریافتی</value>
   </data>
   <data name="BarSubInformation" xml:space="preserve">
-    <value>Image Information</value>
+    <value>اطلاعات تصویر</value>
   </data>
   <data name="BarSubRefresh" xml:space="preserve">
-    <value>Refresh</value>
+    <value>تازه سازی</value>
   </data>
   <data name="BarSubRezolotion" xml:space="preserve">
-    <value>Select resolution</value>
+    <value>انتخاب رزولوشن</value>
   </data>
   <data name="BarSubSelectLanguage" xml:space="preserve">
-    <value>Select Language</value>
+    <value>انتخاب زبان</value>
   </data>
   <data name="BarSubSetting" xml:space="preserve">
-    <value>Setting</value>
+    <value>تنظیمات</value>
   </data>
   <data name="BarSubStorage" xml:space="preserve">
-    <value>Storage</value>
+    <value>مکان ذخیره سازی</value>
   </data>
 </root>

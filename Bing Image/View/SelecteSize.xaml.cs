@@ -1,7 +1,5 @@
-﻿using DevExpress.Xpf.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,19 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Bing_Image
+namespace Bing_Image.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SelecteSize.xaml
     /// </summary>
-    public partial class MainWindow : DXWindow
+    public partial class SelecteSize : Window
     {
-        public MainWindow()
+        public SelecteSize()
         {
-            Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
         }
     }
