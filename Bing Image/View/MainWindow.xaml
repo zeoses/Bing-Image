@@ -1,0 +1,35 @@
+﻿<dx:DXWindow x:Class="Bing_Image.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"       
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        Title="BingImage" Height="469.925" Width="795.358"  >
+    
+    
+    <dx:DXWindow.Background>
+        <ImageBrush/>
+    </dx:DXWindow.Background>
+    <Grid>
+
+        <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" />
+        <dxb:MainMenuControl VerticalAlignment="Top"  FlowDirection="RightToLeft">
+            <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="_بروز رسانی"/>
+            <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="_انتخاب به عنوان تصویر زمینه " />
+            <dxb:BarSubItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="_انتخاب رزولوشن تصویر" />
+            <dxb:BarSubItem x:Name="locat" CategoryName="BuiltInMenus" Content="_مکان ذخیره سازی "/>
+            <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="اطلاعات تصویر" />
+            <dxb:BarSubItem x:Name="imagelocate" CategoryName="BuiltInMenus" Content=" تصویر دریافتی"/>
+            <dxb:BarSubItem x:Name="Aboutme" CategoryName="BuiltInMenus" Content="درباره ی ما" />
+
+        </dxb:MainMenuControl>
+        <StatusBar x:Name="stbState" FlowDirection="RightToLeft" Height="26" VerticalAlignment="Bottom">
+            <StatusBarItem>
+                <TextBlock x:Name="tblState" FlowDirection="RightToLeft" />
+            </StatusBarItem>
+        </StatusBar>
+
+        
+
+    </Grid>
+    </dx:DXWindow>
