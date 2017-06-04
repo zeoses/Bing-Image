@@ -6,7 +6,9 @@
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
         xmlns:properties="clr-namespace:Bing_Image.Properties"
         xmlns:UC="clr-namespace:Bing_Image.View.UC" x:Class="Bing_Image.MainWindow"
-        Title="{x:Static properties:Resources.FrmMainWin}" Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
+        Title="{x:Static properties:Resources.FrmMainWin}" 
+        WindowStartupLocation="CenterScreen"
+        Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
 
 
     <dx:DXWindow.Background>
@@ -35,7 +37,7 @@
         </dxb:MainMenuControl>
         <StatusBar x:Name="stbState" FlowDirection="RightToLeft" Height="26" VerticalAlignment="Bottom">
             <StatusBarItem>
-                <TextBlock x:Name="tblState" FlowDirection="RightToLeft" />
+                <TextBlock x:Name="tblState" FlowDirection="RightToLeft" Text="     " />
             </StatusBarItem>
         </StatusBar>
 

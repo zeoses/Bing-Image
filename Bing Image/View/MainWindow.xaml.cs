@@ -29,6 +29,9 @@ namespace Bing_Image
             InitializeComponent();
             if (Properties.Settings.Default.Language == "fa-ir")
                 MMControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+
+            tblState.Background = (Classes.CheckConnectionInternet.CheckForPinck()) ? (new SolidColorBrush(Colors.GreenYellow)) : (new SolidColorBrush(Colors.OrangeRed));
+            
        
         }
 
