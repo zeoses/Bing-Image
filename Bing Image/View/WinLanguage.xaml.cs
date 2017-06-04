@@ -41,6 +41,8 @@ namespace Bing_Image.View
 
             Properties.Settings.Default.Save();
 
+            Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
+
             MessageBoxResult Result = MessageBox.Show(Properties.Resources.MSBChangeLanguage, "", MessageBoxButton.OKCancel);
             if(Result==MessageBoxResult.OK)
             {
