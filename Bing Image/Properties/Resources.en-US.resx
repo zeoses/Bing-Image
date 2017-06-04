@@ -144,4 +144,16 @@
   <data name="BarSubStorage" xml:space="preserve">
     <value>Storage</value>
   </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="FrmDimension" xml:space="preserve">
+    <value>Dimension</value>
+  </data>
+  <data name="FrmMainWin" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
 </root>

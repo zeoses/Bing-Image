@@ -27,5 +27,10 @@ namespace Bing_Image
             Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
         }
+
+        private void resoulotion_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
+        {
+            new View.SelecteSize().ShowDialog();
+        }
     }
 }

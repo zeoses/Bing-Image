@@ -144,4 +144,16 @@
   <data name="BarSubStorage" xml:space="preserve">
     <value>مکان ذخیره سازی</value>
   </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="FrmDimension" xml:space="preserve">
+    <value>ابعاد</value>
+  </data>
+  <data name="FrmMainWin" xml:space="preserve">
+    <value>منوی اصلی</value>
+  </data>
 </root>

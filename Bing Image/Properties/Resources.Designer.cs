@@ -140,5 +140,41 @@ namespace Bing_Image.Properties {
                 return ResourceManager.GetString("BarSubStorage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string BtnCancel {
+            get {
+                return ResourceManager.GetString("BtnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string BtnSave {
+            get {
+                return ResourceManager.GetString("BtnSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dimension.
+        /// </summary>
+        public static string FrmDimension {
+            get {
+                return ResourceManager.GetString("FrmDimension", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MainWindow.
+        /// </summary>
+        public static string FrmMainWin {
+            get {
+                return ResourceManager.GetString("FrmMainWin", resourceCulture);
+            }
+        }
     }
 }

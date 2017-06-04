@@ -5,7 +5,7 @@
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
         xmlns:properties="clr-namespace:Bing_Image.Properties"
-        Title="BingImage" Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
+        Title="{x:Static properties:Resources.FrmMainWin}" Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
 
 
     <dx:DXWindow.Background>
@@ -23,7 +23,7 @@
             <dxb:BarSubItem Name="bsSetting" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSetting}" >
 
                 <dxb:BarButtonItem x:Name="locat" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubStorage}" Glyph="pack://application:,,,/Bing Image;component/Resource/storage-16.png" />
-                <dxb:BarButtonItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRezolotion}" Glyph="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png"  />
+                <dxb:BarButtonItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRezolotion}" Glyph="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" ItemClick="resoulotion_ItemClick" />
                 <dxb:BarItemLinkSeparator/>
                 <dxb:BarButtonItem x:Name="SelectLanguage" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSelectLanguage}"  Glyph="pack://application:,,,/Bing Image;component/Resource/icon24pt_language_copy-16.png"/>
                 <dxb:BarItemLinkSeparator/>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Xpf.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Bing_Image.View
     /// <summary>
     /// Interaction logic for SelecteSize.xaml
     /// </summary>
-    public partial class SelecteSize : Window
+    public partial class SelecteSize : DXWindow
     {
         public SelecteSize()
         {
