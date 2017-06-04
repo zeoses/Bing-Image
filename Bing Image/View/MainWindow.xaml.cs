@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,9 @@ namespace Bing_Image
         {
             Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
+            if (Properties.Settings.Default.Language == "fa-ir")
+                MMControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
+       
         }
 
         private void resoulotion_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
@@ -36,6 +40,24 @@ namespace Bing_Image
         private void SelectLanguage_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
         {
             new View.WinLanguage().ShowDialog();
+        }
+
+       
+        private void Images_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
+        {
+            if (Properties.Settings.Default.LocationDefult != string.Empty)
+            {
+                if (Directory.Exists(Properties.Settings.Default.LocationDefult))
+                {
+                    ucGallery.Visibility = Visibility.Visible;
+                   
+                    //  System.Diagnostics.Process.Start(Properties.Settings.Default.locationDefult);
+                }
+            }
+            else
+            {
+               // ChangeLocate();
+            }
         }
     }
 }

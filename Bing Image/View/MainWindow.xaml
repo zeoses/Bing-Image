@@ -1,10 +1,11 @@
-﻿<dx:DXWindow x:Class="Bing_Image.MainWindow"
+﻿<dx:DXWindow
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"       
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
         xmlns:properties="clr-namespace:Bing_Image.Properties"
+        xmlns:UC="clr-namespace:Bing_Image.View.UC" x:Class="Bing_Image.MainWindow"
         Title="{x:Static properties:Resources.FrmMainWin}" Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
 
 
@@ -14,20 +15,20 @@
     <Grid>
 
         <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" />
-        <dxb:MainMenuControl VerticalAlignment="Top"  FlowDirection="RightToLeft">
+        <dxb:MainMenuControl VerticalAlignment="Top"  Name="MMControl">
             <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}"/>
             <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" />
-            
+
             <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" />
-            <dxb:BarSubItem x:Name="imagelocate" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubImages}"/>
-            <dxb:BarSubItem Name="bsSetting" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSetting}" >
+            <dxb:BarSubItem x:Name="Images" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubImages}" ItemClick="Images_ItemClick"/>
+            <dxb:BarSubItem x:Name="bsSetting" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSetting}" >
 
                 <dxb:BarButtonItem x:Name="locat" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubStorage}" Glyph="pack://application:,,,/Bing Image;component/Resource/storage-16.png" />
                 <dxb:BarButtonItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRezolotion}" Glyph="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" ItemClick="resoulotion_ItemClick" />
                 <dxb:BarItemLinkSeparator/>
                 <dxb:BarButtonItem x:Name="SelectLanguage" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSelectLanguage}" ItemClick="SelectLanguage_ItemClick" Glyph="pack://application:,,,/Bing Image;component/Resource/icon24pt_language_copy-16.png"/>
                 <dxb:BarItemLinkSeparator/>
-                <dxb:BarButtonItem Name="bAbout" CategoryName="Setting" Content="{x:Static properties:Resources.BarSubaboutus}" Description="Displays the description of this program." />
+                <dxb:BarButtonItem x:Name="bAbout" CategoryName="Setting" Content="{x:Static properties:Resources.BarSubaboutus}" Description="Displays the description of this program." />
             </dxb:BarSubItem>
 
 
@@ -37,6 +38,10 @@
                 <TextBlock x:Name="tblState" FlowDirection="RightToLeft" />
             </StatusBarItem>
         </StatusBar>
+
+
+
+        <UC:UCGallery HorizontalAlignment="Left" VerticalAlignment="Top" Height="439" Width="787" Visibility="Hidden" x:Name="ucGallery"/>
 
 
 

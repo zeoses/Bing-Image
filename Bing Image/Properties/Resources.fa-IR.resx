@@ -147,6 +147,12 @@
   <data name="BtnCancel" xml:space="preserve">
     <value>انصراف</value>
   </data>
+  <data name="BtnClose" xml:space="preserve">
+    <value>بستن</value>
+  </data>
+  <data name="BtnOpenFolder" xml:space="preserve">
+    <value>بازکردن پوشه</value>
+  </data>
   <data name="BtnSave" xml:space="preserve">
     <value>ذخیره</value>
   </data>

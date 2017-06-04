@@ -5,7 +5,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
         xmlns:properties="clr-namespace:Bing_Image.Properties"
-        Title="{x:Static properties:Resources.BarSubSelectLanguage}" Height="174.812" Width="195.112" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"  ResizeMode="NoResize" Icon="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" >
+        Title="{x:Static properties:Resources.BarSubSelectLanguage}"
+        Height="174.812" Width="195.112" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"  ResizeMode="NoResize" Icon="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" >
     <Grid Margin="0,0,-6,0">
 
         <RadioButton Name="rb1366x768" TabIndex="1" Content="Enghlish" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,20,0,0" FlowDirection="RightToLeft"/>

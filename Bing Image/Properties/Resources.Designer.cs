@@ -151,6 +151,24 @@ namespace Bing_Image.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string BtnClose {
+            get {
+                return ResourceManager.GetString("BtnClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OpenFolder.
+        /// </summary>
+        public static string BtnOpenFolder {
+            get {
+                return ResourceManager.GetString("BtnOpenFolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         public static string BtnSave {
