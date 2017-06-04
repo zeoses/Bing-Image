@@ -16,9 +16,9 @@
     </dx:DXWindow.Background>
     <Grid>
 
-        <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" />
+        <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" Source="{Binding Image}" />
         <dxb:MainMenuControl VerticalAlignment="Top"  Name="MMControl">
-            <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}"/>
+            <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}" Command="{Binding RefreshCommand}"/>
             <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" />
 
             <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" />
@@ -37,7 +37,7 @@
         </dxb:MainMenuControl>
         <StatusBar x:Name="stbState" FlowDirection="RightToLeft" Height="26" VerticalAlignment="Bottom">
             <StatusBarItem>
-                <TextBlock x:Name="tblState" FlowDirection="RightToLeft" Text="     " />
+                <TextBlock x:Name="tblState" FlowDirection="RightToLeft" Text="     " Background="{Binding ConnectColor}" />
             </StatusBarItem>
         </StatusBar>
 

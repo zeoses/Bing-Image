@@ -27,10 +27,11 @@ namespace Bing_Image
         {
             Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
             InitializeComponent();
+           // this.Owner = Application.Current.MainWindow;
+            this.DataContext = new Classes.MainWindowVM(); 
             if (Properties.Settings.Default.Language == "fa-ir")
                 MMControl.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
-            tblState.Background = (Classes.CheckConnectionInternet.CheckForPing()) ? (new SolidColorBrush(Colors.GreenYellow)) : (new SolidColorBrush(Colors.OrangeRed));
             
        
         }
