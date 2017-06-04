@@ -11,7 +11,7 @@ namespace Bing_Image.Classes
     public static class CheckConnectionInternet
     {
 
-        public static bool CheckForPinck()
+        public static bool CheckForPing()
         {
             try 
             { 
