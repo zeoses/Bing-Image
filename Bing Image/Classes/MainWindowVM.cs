@@ -139,9 +139,9 @@ namespace Bing_Image.Classes
                                     }
                                     else
                                     {
-                                       // if (i != 0)
+                                        if(Image.BaseUri!=null)
                                         System.Windows.Forms.MessageBox.Show(Properties.Resources.MSBDontAddNewImage, Properties.Resources.MSBMessage);
-                                        //i++;
+                                        
                                     }
 
                                 }
@@ -163,7 +163,7 @@ namespace Bing_Image.Classes
                                     }
                                     else
                                     {
-
+                                        if (Image.BaseUri != null)
                                         System.Windows.Forms.MessageBox.Show(Properties.Resources.MSBDontAddNewImage, Properties.Resources.MSBMessage);
                                         
                                     }
