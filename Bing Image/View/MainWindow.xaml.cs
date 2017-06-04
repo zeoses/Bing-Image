@@ -63,5 +63,10 @@ namespace Bing_Image
                // ChangeLocate();
             }
         }
+
+        private void DXWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

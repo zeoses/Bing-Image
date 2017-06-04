@@ -4,22 +4,28 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
         xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
         xmlns:properties="clr-namespace:Bing_Image.Properties"
-        xmlns:UC="clr-namespace:Bing_Image.View.UC" x:Class="Bing_Image.MainWindow"
+        xmlns:UC="clr-namespace:Bing_Image.View.UC" 
+         x:Class="Bing_Image.MainWindow"
         Title="{x:Static properties:Resources.FrmMainWin}" 
         WindowStartupLocation="CenterScreen"
-        Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico"  >
-
+           Loaded="DXWindow_Loaded"
+        Height="469.925" Width="795.358" Icon="pack://application:,,,/Bing Image;component/Resource/1.ico">
+    
+    
 
     <dx:DXWindow.Background>
         <ImageBrush/>
     </dx:DXWindow.Background>
+
+    
     <Grid>
 
         <dxe:ImageEdit x:Name="ImageEdit" Margin="162,48,150,58"  Stretch="Uniform" ShowLoadDialogOnClickMode="Never" Source="{Binding Image}" />
         <dxb:MainMenuControl VerticalAlignment="Top"  Name="MMControl">
             <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}" Command="{Binding RefreshCommand}"/>
-            <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" />
+            <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" Command="{Binding SetDesktopBackground}" />
 
             <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" />
             <dxb:BarSubItem x:Name="Images" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubImages}" ItemClick="Images_ItemClick"/>

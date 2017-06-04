@@ -27,16 +27,18 @@ namespace Bing_Image.Classes
         public MainWindowVM()
         {
             Image = new BitmapImage();
-            New();
-           
-           
+            FindAndDownloadImage();
             InitializeCommands();
         }
 
 
         private void InitializeCommands()
         {
+           
+
             this.RefreshCommand = new RelayCommand(param => this.FindAndDownloadImage());
+            this.SetDesktopBackground = new RelayCommand(param => this.SetBackground());
+            
            // this.CloseCommand = new RelayCommand(param => this.Close());
           //  this.SaveCommand = new RelayCommand(param => this.Save(), param => CanSave());
           
@@ -69,7 +71,7 @@ namespace Bing_Image.Classes
 
         #region Command
         public RelayCommand CloseCommand { get; set; }
-        public RelayCommand SaveCommand { get; set; }
+        public RelayCommand SetDesktopBackground { get; set; }
 
         public RelayCommand RefreshCommand { get; set; }
        
@@ -83,7 +85,7 @@ namespace Bing_Image.Classes
                
             
         }
-        bool canSave = false;
+        
        
         
         private void ChangeLocation()
@@ -104,8 +106,8 @@ namespace Bing_Image.Classes
             catch { }
         }
 
-        
-        public void FindAndDownloadImage()
+
+        private void FindAndDownloadImage()
         {
 
             try
@@ -184,7 +186,7 @@ namespace Bing_Image.Classes
                         if (Properties.Settings.Default.LastFilepath != null)
                         {
                             fileName = Properties.Settings.Default.LastFilepath;
-                            SetImage();
+                            SetImage(fileName);
                         }
 
 
@@ -225,7 +227,7 @@ namespace Bing_Image.Classes
            
         }
 
-        public string GetInformation(string s)
+        private string GetInformation(string s)
         {
            
             s = s.Replace("copyright", "Æ");
@@ -233,7 +235,7 @@ namespace Bing_Image.Classes
             return k[1];
         }
 
-        public string image1366x768(string s)
+        private string image1366x768(string s)
         {
             try
             {
@@ -246,7 +248,7 @@ namespace Bing_Image.Classes
             catch { return " "; }
             
         }
-        public string image1920x1080(string s)
+        private string image1920x1080(string s)
         {
             try
             {
@@ -260,6 +262,13 @@ namespace Bing_Image.Classes
             catch { return " "; }
         }
      
+        private void SetBackground()
+        {
+            
+            fileName = Properties.Settings.Default.LastFilepath;
+            Classes.SetDesktopBackGround.Set(fileName, SetDesktopBackGround.Style.Stretched);
+
+        }
         #endregion Method
 
     }
