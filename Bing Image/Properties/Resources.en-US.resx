@@ -162,4 +162,7 @@
   <data name="FrmMainWin" xml:space="preserve">
     <value>MainWindow</value>
   </data>
+  <data name="MSBChangeLanguage" xml:space="preserve">
+    <value>The program must be restarted for the changes.</value>
+  </data>
 </root>

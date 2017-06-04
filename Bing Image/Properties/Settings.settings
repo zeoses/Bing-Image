@@ -5,8 +5,8 @@
     <Setting Name="LocationDefult" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="Resouloactio" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="Rezouloactio" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1920x1080</Value>
     </Setting>
     <Setting Name="LastFilepath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

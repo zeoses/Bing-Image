@@ -1,6 +1,8 @@
 ﻿using DevExpress.Xpf.Core;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,35 @@ namespace Bing_Image.View
         public WinLanguage()
         {
             InitializeComponent();
+            if (Properties.Settings.Default.Language == "fa-ir")
+                LPersian.IsChecked = true;
+            else
+                LEnghlish.IsChecked = true;
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (LEnghlish.IsChecked == true)
+                Properties.Settings.Default.Language = "en-us";
+            else
+                Properties.Settings.Default.Language = "fa-ir";
+
+            Properties.Settings.Default.Save();
+
+            MessageBoxResult Result = MessageBox.Show(Properties.Resources.MSBChangeLanguage, "", MessageBoxButton.OKCancel);
+            if(Result==MessageBoxResult.OK)
+            {
+                //this is for Restart App
+                System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+                Application.Current.Shutdown();
+            }
+            this.Close();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

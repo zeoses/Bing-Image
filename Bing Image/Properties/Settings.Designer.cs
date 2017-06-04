@@ -37,13 +37,13 @@ namespace Bing_Image.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Resouloactio {
+        [global::System.Configuration.DefaultSettingValueAttribute("1920x1080")]
+        public string Rezouloactio {
             get {
-                return ((string)(this["Resouloactio"]));
+                return ((string)(this["Rezouloactio"]));
             }
             set {
-                this["Resouloactio"] = value;
+                this["Rezouloactio"] = value;
             }
         }
         

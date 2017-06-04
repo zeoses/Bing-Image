@@ -194,5 +194,14 @@ namespace Bing_Image.Properties {
                 return ResourceManager.GetString("FrmMainWin", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The program must be restarted for the changes..
+        /// </summary>
+        public static string MSBChangeLanguage {
+            get {
+                return ResourceManager.GetString("MSBChangeLanguage", resourceCulture);
+            }
+        }
     }
 }

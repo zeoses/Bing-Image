@@ -162,4 +162,7 @@
   <data name="FrmMainWin" xml:space="preserve">
     <value>منوی اصلی</value>
   </data>
+  <data name="MSBChangeLanguage" xml:space="preserve">
+    <value>برای مشاهده تغییرات برنامه باید دوباره راه اندازی شود</value>
+  </data>
 </root>

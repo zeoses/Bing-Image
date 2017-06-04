@@ -7,10 +7,10 @@
         Title="{x:Static properties:Resources.FrmDimension}" Height="174.812" Width="195.112" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"  ResizeMode="NoResize" Icon="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" >
     <Grid Margin="0,0,-6,0">
 
-        <RadioButton Name="rb1366x768" TabIndex="1" Content="1366x768" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="94,20,0,0" FlowDirection="RightToLeft"/>
-        <RadioButton Name="rb1920x1080" TabIndex="2" Content="1920x1080" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,55,0,0" FlowDirection="RightToLeft"/>
-        <dx:SimpleButton Content="{x:Static properties:Resources.BtnSave}" TabIndex="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,90,0,0" Height="26" Width="61"/>
-        <dx:SimpleButton Content="{x:Static properties:Resources.BtnCancel}" TabIndex="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" Height="26" />
+        <RadioButton Name="rb1366x768" TabIndex="1" Content="1366 * 768" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,28,32,0" FlowDirection="RightToLeft"/>
+        <RadioButton Name="rb1920x1080" TabIndex="2" Content="1920 * 1080" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,55,32,0" FlowDirection="RightToLeft"/>
+        <dx:SimpleButton Content="{x:Static properties:Resources.BtnSave}" Name="btnSave" Click="btnSave_Click" TabIndex="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,90,0,0" Height="26" Width="61"/>
+        <dx:SimpleButton Content="{x:Static properties:Resources.BtnCancel}" Name="btnCancell" Click="btnCancell_Click" TabIndex="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" Height="26" />
         <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="162" Margin="10,10,0,0" />
 
     </Grid>
