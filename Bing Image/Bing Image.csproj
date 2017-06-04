@@ -81,6 +81,9 @@
     <Compile Include="View\SelecteSize.xaml.cs">
       <DependentUpon>SelecteSize.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\WinLanguage.xaml.cs">
+      <DependentUpon>WinLanguage.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,6 +99,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\SelecteSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WinLanguage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

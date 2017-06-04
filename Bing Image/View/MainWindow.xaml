@@ -25,7 +25,7 @@
                 <dxb:BarButtonItem x:Name="locat" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubStorage}" Glyph="pack://application:,,,/Bing Image;component/Resource/storage-16.png" />
                 <dxb:BarButtonItem x:Name="resoulotion" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRezolotion}" Glyph="pack://application:,,,/Bing Image;component/Resource/resize-17-16.png" ItemClick="resoulotion_ItemClick" />
                 <dxb:BarItemLinkSeparator/>
-                <dxb:BarButtonItem x:Name="SelectLanguage" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSelectLanguage}"  Glyph="pack://application:,,,/Bing Image;component/Resource/icon24pt_language_copy-16.png"/>
+                <dxb:BarButtonItem x:Name="SelectLanguage" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSelectLanguage}" ItemClick="SelectLanguage_ItemClick" Glyph="pack://application:,,,/Bing Image;component/Resource/icon24pt_language_copy-16.png"/>
                 <dxb:BarItemLinkSeparator/>
                 <dxb:BarButtonItem Name="bAbout" CategoryName="Setting" Content="{x:Static properties:Resources.BarSubaboutus}" Description="Displays the description of this program." />
             </dxb:BarSubItem>

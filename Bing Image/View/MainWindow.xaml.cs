@@ -32,5 +32,10 @@ namespace Bing_Image
         {
             new View.SelecteSize().ShowDialog();
         }
+
+        private void SelectLanguage_ItemClick(object sender, DevExpress.Xpf.Bars.ItemClickEventArgs e)
+        {
+            new View.WinLanguage().ShowDialog();
+        }
     }
 }
