@@ -27,7 +27,7 @@
             <dxb:BarSubItem x:Name="refresh" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubRefresh}" Command="{Binding RefreshCommand}"/>
             <dxb:BarSubItem x:Name="set" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSuBackGround}" Command="{Binding SetDesktopBackground}" />
 
-            <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" />
+            <dxb:BarSubItem x:Name="Information" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubInformation}" Command="{Binding Getinform}"/>
             <dxb:BarSubItem x:Name="Images" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubImages}" ItemClick="Images_ItemClick"/>
             <dxb:BarSubItem x:Name="bsSetting" CategoryName="BuiltInMenus" Content="{x:Static properties:Resources.BarSubSetting}" >
 

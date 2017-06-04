@@ -34,6 +34,7 @@ namespace Bing_Image.View
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
 
+            string oldLang = Properties.Settings.Default.Language;
             if (LEnghlish.IsChecked == true)
                 Properties.Settings.Default.Language = "en-us";
             else
@@ -41,14 +42,18 @@ namespace Bing_Image.View
 
             Properties.Settings.Default.Save();
 
-            Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
 
-            MessageBoxResult Result = MessageBox.Show(Properties.Resources.MSBChangeLanguage, "", MessageBoxButton.OKCancel);
-            if(Result==MessageBoxResult.OK)
+            if (Properties.Settings.Default.Language != oldLang)
             {
-                //this is for Restart App
-                System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
-                Application.Current.Shutdown();
+                Properties.Resources.Culture = new CultureInfo(Properties.Settings.Default.Language);
+
+                MessageBoxResult Result = MessageBox.Show(Properties.Resources.MSBChangeLanguage, "", MessageBoxButton.OKCancel);
+                if (Result == MessageBoxResult.OK)
+                {
+                    //this is for Restart App
+                    System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+                    Application.Current.Shutdown();
+                }
             }
             this.Close();
         }

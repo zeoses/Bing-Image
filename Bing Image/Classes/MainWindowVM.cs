@@ -38,6 +38,7 @@ namespace Bing_Image.Classes
 
             this.RefreshCommand = new RelayCommand(param => this.FindAndDownloadImage());
             this.SetDesktopBackground = new RelayCommand(param => this.SetBackground());
+            this.Getinform = new RelayCommand(param => this.GetInfo());
             
            // this.CloseCommand = new RelayCommand(param => this.Close());
           //  this.SaveCommand = new RelayCommand(param => this.Save(), param => CanSave());
@@ -72,6 +73,7 @@ namespace Bing_Image.Classes
         #region Command
         public RelayCommand CloseCommand { get; set; }
         public RelayCommand SetDesktopBackground { get; set; }
+        public RelayCommand Getinform { get; set; }
 
         public RelayCommand RefreshCommand { get; set; }
        
@@ -138,7 +140,7 @@ namespace Bing_Image.Classes
                                     else
                                     {
                                        // if (i != 0)
-                                            System.Windows.Forms.MessageBox.Show("هنوز تصویر جدیدی اضافه نشده است", "پیام");
+                                        System.Windows.Forms.MessageBox.Show(Properties.Resources.MSBDontAddNewImage, Properties.Resources.MSBMessage);
                                         //i++;
                                     }
 
@@ -161,8 +163,8 @@ namespace Bing_Image.Classes
                                     }
                                     else
                                     {
-                                        
-                                            System.Windows.Forms.MessageBox.Show("هنوز تصویر جدیدی اضافه نشده است", "پیام");
+
+                                        System.Windows.Forms.MessageBox.Show(Properties.Resources.MSBDontAddNewImage, Properties.Resources.MSBMessage);
                                         
                                     }
                                 }
@@ -181,7 +183,7 @@ namespace Bing_Image.Classes
                     else
                     {
 
-                        System.Windows.Forms.MessageBox.Show("شما به اینترنت متصل نیستید");
+                        System.Windows.Forms.MessageBox.Show(Properties.Resources.MSBDisconnect, Properties.Resources.MSBMessage);
                        
                         if (Properties.Settings.Default.LastFilepath != null)
                         {
@@ -268,6 +270,14 @@ namespace Bing_Image.Classes
             fileName = Properties.Settings.Default.LastFilepath;
             Classes.SetDesktopBackGround.Set(fileName, SetDesktopBackGround.Style.Stretched);
 
+        }
+
+        private void GetInfo()
+        {
+            if(imageInformation!=string.Empty)
+            {
+                System.Windows.Forms.MessageBox.Show(imageInformation, Properties.Resources.MSBMessage);
+            }
         }
         #endregion Method
 

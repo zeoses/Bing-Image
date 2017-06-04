@@ -165,4 +165,13 @@
   <data name="MSBChangeLanguage" xml:space="preserve">
     <value>The program must be restarted for the changes.</value>
   </data>
+  <data name="MSBDisconnect" xml:space="preserve">
+    <value>You're not connected</value>
+  </data>
+  <data name="MSBDontAddNewImage" xml:space="preserve">
+    <value>Do not add a new image</value>
+  </data>
+  <data name="MSBMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
 </root>

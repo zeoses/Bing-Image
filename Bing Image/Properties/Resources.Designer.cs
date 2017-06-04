@@ -203,5 +203,32 @@ namespace Bing_Image.Properties {
                 return ResourceManager.GetString("MSBChangeLanguage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You&apos;re not connected.
+        /// </summary>
+        public static string MSBDisconnect {
+            get {
+                return ResourceManager.GetString("MSBDisconnect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do not add a new image.
+        /// </summary>
+        public static string MSBDontAddNewImage {
+            get {
+                return ResourceManager.GetString("MSBDontAddNewImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string MSBMessage {
+            get {
+                return ResourceManager.GetString("MSBMessage", resourceCulture);
+            }
+        }
     }
 }

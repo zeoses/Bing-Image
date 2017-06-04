@@ -165,4 +165,13 @@
   <data name="MSBChangeLanguage" xml:space="preserve">
     <value>برای مشاهده تغییرات برنامه باید دوباره راه اندازی شود</value>
   </data>
+  <data name="MSBDisconnect" xml:space="preserve">
+    <value>شما به اینترنت متصل نیستید</value>
+  </data>
+  <data name="MSBDontAddNewImage" xml:space="preserve">
+    <value>هنوز تصویر جدیدی اضافه نشده است</value>
+  </data>
+  <data name="MSBMessage" xml:space="preserve">
+    <value>پیام</value>
+  </data>
 </root>
