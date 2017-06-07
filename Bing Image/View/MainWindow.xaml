@@ -49,7 +49,7 @@
 
 
 
-        <UC:UCGallery HorizontalAlignment="Left" VerticalAlignment="Top" Height="439" Width="787" Visibility="Hidden" x:Name="ucGallery"/>
+        <UC:UCGallery   Visibility="Hidden" x:Name="ucGallery"/>
 
 
 

@@ -54,7 +54,7 @@ namespace Bing_Image
                 if (Directory.Exists(Properties.Settings.Default.LocationDefult))
                 {
                     ucGallery.Visibility = Visibility.Visible;
-                   
+                    
                     //  System.Diagnostics.Process.Start(Properties.Settings.Default.locationDefult);
                 }
             }
